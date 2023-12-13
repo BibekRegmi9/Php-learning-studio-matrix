@@ -1,0 +1,38 @@
+run in the webroot
+
+- php -S localhost:8000 
+
+
+Apache
+======
+
+-- virtual host
+
+192.168.10.30 (real host)
+
+virtual host
+
+/etc/apache2 has apache config
+
+-- apache2.conf
+-- envvars
+
+--in envvars change the user to who is going to be running apache
+
+export APACHE_RUN_USER=bibek
+export APACHE_RUN_GROUP=bibek
+
+apache2.conf file has basic apache configuration
+
+
+---
+
+-- our apache starts to listen at /var/www
+
+
+
+
+symbolic link ln -s /home/bibek/code/ html
+
+
+mysql cli => mysql -u root -p
